@@ -1,0 +1,38 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 4;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.navbar {
+    grid-area: 1 / 1 / 1 / 5;
+}
+
+.sidebar {
+    grid-area: 2 / 1 / 5 / 1;
+}
+
+.main {
+    grid-area: 2 / 2 / 3 / 5;
+}
+
+.footer {
+    grid-area: 4 / 2 / 4 / 5;
+}
+
+
+@media (min-width: 400px) and (max-width: 1199.98px) {
+    .grid-item {
+        grid-row: auto / auto;
+        grid-column: 1/5;
+    }
+}

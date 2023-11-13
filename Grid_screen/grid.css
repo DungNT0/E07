@@ -30,9 +30,13 @@
 }
 
 
-@media (min-width: 400px) and (max-width: 1199.98px) {
+@media (min-width: 400px) and (max-width: 1000x) {
     .grid-item {
+        grid-area: auto;
+    }
+
+    /* .grid-item {
         grid-row: auto / auto;
         grid-column: 1/5;
-    }
+    } */
 }
